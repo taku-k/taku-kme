@@ -76,7 +76,12 @@ li.li-github {
 }
 
 iframe {
-    margin: 0 auto;
-    display:block;
-    text-align:center;
+	margin: 0 auto;
+	display:block;
+	text-align:center;
 }
+
+/*body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}*/

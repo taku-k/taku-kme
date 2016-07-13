@@ -14,6 +14,10 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Flat-UI CSS -->
+    <!-- <link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> -->
 
     <!-- Custom styles -->
     <link href="css/custom.css" rel="stylesheet">
@@ -39,22 +43,23 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="li-github"><a href="https://github.com/taku-k">GitHub</a></li>
+                    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About Me</a></li>
+                    <li><a href="#experience"><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</a></li>
+                    <li><a href="#projects"><i class="fa fa-archive" aria-hidden="true"></i> Projects</a></li>
+                    <li><a href="#educations"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Educations</a></li>
+                    <li><a href="#contact"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                    <li class="li-github"><a href="https://github.com/taku-k"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </nav>
 
+
     <div class="container">
 
         <div id="about" class="custom-body">
-            <h2 class="h2-section-title">Takuya Kuwahara - About Me</h2>
+            <h2 class="h2-section-title"><i class="fa fa-user" aria-hidden="true"></i> Takuya Kuwahara - About Me</h2>
             <hr class="hr-custom-line" />
             <div class="row">
                 <div class="col-md-4"><img class="img-rounded img-responsive img-profile" src="img/profile.jpg"></div>
@@ -91,7 +96,7 @@
 
         <div id="experience" class="custom-body">
 
-            <h2 class="h2-section-title">Experience</h2>
+            <h2 class="h2-section-title"><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h2>
             <hr />
 
             <div class="row">
@@ -131,7 +136,7 @@
         </div>
 
         <div id="projects" class="custom-body">
-            <h2 class="h2-section-title">Projects</h2>
+            <h2 class="h2-section-title"><i class="fa fa-archive" aria-hidden="true"></i> Projects</h2>
             <hr class="hr-custom-line" />
             <div class="row">
                 <div class="col-md-3">
@@ -167,8 +172,8 @@
             </div>
         </div>
 
-        <div id="education" class="custom-body">
-            <h2 class="h2-section-title">Education</h2>
+        <div id="educations" class="custom-body">
+            <h2 class="h2-section-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Educations</h2>
             <hr />
             <div class="row">
                 <div class="col-md-12">
@@ -193,7 +198,7 @@
         </div>
 
         <div id="contact" class="custom-body">
-            <h2 class="h2-section-title">Contact</h2>
+            <h2 class="h2-section-title"><i class="fa fa-phone" aria-hidden="true"></i> Contact</h2>
             <hr />
             <div class="row">
                 <div class="col-md-2"><span class="fa fa-envelope" aria-hidden="true"></span><b> Email:</b></div>
@@ -219,5 +224,15 @@
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80638483-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>
