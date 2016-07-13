@@ -9,12 +9,12 @@
       file: path={{ services_dir }} state=directory owner=taku group=taku mode=0755
     - name: Installed nginx
       apt: name=nginx state=present
+    - name: Update repository
+      git: repo=git@github.com:taku-k/taku-kme.git dest={{ app_dir }} version={{ branch }} update=yes
+      sudo: no
     - name: Put nginx.conf
       template: src=config/nginx.conf dest=/etc/nginx/nginx.conf
     - name: Set auto start nginx
       command: update-rc.d nginx enable
     - name: Restart nginx
       service: name=nginx state=restarted
-    - name: Update repository
-      git: repo=git@github.com:taku-k/taku-kme.git dest={{ app_dir }} version={{ branch }} update=yes
-      sudo: no
