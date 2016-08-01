@@ -1,5 +1,5 @@
 - hosts: taku-k-me
-  sudo: yes
+  become: yes
   vars:
     services_dir: /services
     app_dir: /services/taku-kme
@@ -11,7 +11,7 @@
       apt: name=nginx state=present
     - name: Update repository
       git: repo=git@github.com:taku-k/taku-kme.git dest={{ app_dir }} version={{ branch }} update=yes
-      sudo: no
+      become: no
     - name: Put nginx.conf
       template: src=config/nginx.conf dest=/etc/nginx/nginx.conf
     - name: Set auto start nginx
