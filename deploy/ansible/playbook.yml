@@ -18,3 +18,9 @@
       command: update-rc.d nginx enable
     - name: Restart nginx
       service: name=nginx state=restarted
+    - cron: name="ssl cerf auto renewal" weekday="1" minute=30 hour=2
+        user="root" job="/usr/local/sbin/certbot-auto renew >> /var/log/le-renew.log"
+        cron_file=ssl_cerf_auto_renewal
+    - cron: name="nginx reload" weekday="1" minute=35 hour=2
+        user="root" job="/etc/init.d/nginx reload"
+        cron_file=nginx_reload
