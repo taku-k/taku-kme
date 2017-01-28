@@ -1,6 +1,0 @@
-[taku-k-me]
-107.167.183.226
-
-[all:vars]
-ansible_ssh_user=taku
-ansible_ssh_private_key_file=~/.ssh/google_compute_engine
